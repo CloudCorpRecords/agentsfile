@@ -1,0 +1,1 @@
+{"name":"repo-good","private":true,"scripts":{"build":"tsc","dev":"node src/index.ts","test":"node --test"},"version":"1.0.0"}

@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "agentsfile": "dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^3"
+  },
+  "description": "Validate AGENTS.md and CLAUDE.md against repo reality: referenced paths, package.json scripts, and documented commands are checked against the actual tree, so agent instruction files cannot quietly rot.",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "homepage": "https://github.com/CloudCorpRecords/agentsfile#readme",
+  "license": "MIT",
+  "mcpName": "io.github.CloudCorpRecords/agentsfile",
+  "name": "@reneturcios/agentsfile",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/agentsfile.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
